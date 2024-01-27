@@ -33,6 +33,9 @@ jobs:
 #terraform plan
    - name: Terraform Plan
      run: terraform plan
+
+   - name: Terraform Validate
+     run: terraform validate -no-color
     
   # install 
 
