@@ -6,7 +6,7 @@ on:
     branches:
       - main
 jobs:
- terraform-ci:
+ terraform-cd:
    runs-on: ubuntu-latest
 
    steps:
