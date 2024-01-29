@@ -1,4 +1,4 @@
-name: Terraform CI
+name: Terraform CD
 
 
 on:
@@ -30,25 +30,6 @@ jobs:
    - name: Initialize Terraform
      run: terraform init
 
-#terraform fmt
-   - name: Terraform prettify
-     run: terraform fmt
-
-#terraform plan
-   - name: Terraform Plan
-     run: terraform plan
-
-   - name: Terraform Validate
-     run: terraform validate -no-color
-    
-  # install 
-
-# Decide when to run CI/CD pipeline 
-# Git push and outload our code into repository 
-#  Create AWS login configure the IAM secret key credential configure 
-# Git clone / git_checkout 
-# Terrafrom init 
-# Terraform plan
-
-# 
-
+#terraform apply
+   - name: Initialize Terraform
+     run: terraform apply --auto-approve
